@@ -17,7 +17,11 @@ const Header = () => {
           <h3>{'<FR />'}</h3>
         </a>
         <S.LeftMenuContainer>
-          <button id="menu-sandwich-icon" onClick={handleChangeMenuVisibility}>
+          <button
+            title="menu opener"
+            id="menu-sandwich-icon"
+            onClick={handleChangeMenuVisibility}
+          >
             <List size={32} />
           </button>
           <S.MenuContainer isMenuVisible={isMenuVisible}>
@@ -48,7 +52,11 @@ const Header = () => {
                 </a>
               </li>
             </ul>
-            <button id="menu-x-icon" onClick={handleChangeMenuVisibility}>
+            <button
+              title="menu closer"
+              id="menu-x-icon"
+              onClick={handleChangeMenuVisibility}
+            >
               <X size={32} />
             </button>
           </S.MenuContainer>
