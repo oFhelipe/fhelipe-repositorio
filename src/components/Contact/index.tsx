@@ -1,7 +1,7 @@
 import Button from '../Button'
 import * as S from './styles'
 import github from '../../assets/icons/github.svg'
-import linkedIn from '../../assets/icons/linkedIn.svg'
+import linkedIn from '../../assets/icons/linked-in.svg'
 import { FormattedMessage } from 'react-intl'
 
 const Contact = () => {
