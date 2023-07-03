@@ -45,10 +45,16 @@ const Projects = () => {
           ))}
         </S.ProjectsListContainer>
       </S.CarrouselContainerContainer>
-      <S.LeftButton onClick={() => handleClickOnPassButton('left')}>
+      <S.LeftButton
+        title="left carrousel container"
+        onClick={() => handleClickOnPassButton('left')}
+      >
         <CaretLeft size={32} />
       </S.LeftButton>
-      <S.RightButton onClick={() => handleClickOnPassButton('right')}>
+      <S.RightButton
+        title="right carrousel container"
+        onClick={() => handleClickOnPassButton('right')}
+      >
         <CaretRight size={32} />
       </S.RightButton>
     </S.ProjectsContainer>
