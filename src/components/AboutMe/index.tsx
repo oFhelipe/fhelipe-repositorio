@@ -1,5 +1,5 @@
 import * as S from './styles'
-import fhelipe from '../../assets/images/fhelipe.png'
+import fhelipe from '../../assets/images/fhelipe.webp'
 import { FormattedMessage } from 'react-intl'
 
 const AboutMe = () => {
