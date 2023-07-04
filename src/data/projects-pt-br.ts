@@ -1,30 +1,27 @@
-import igniteCoffee from '../assets/images/projects/ignite-coffee.png'
+import igniteCoffeeDelivery from '../assets/images/projects/ignite-coffee-delivery.webp'
+import youtubeClone from '../assets/images/projects/youtube-clone.webp'
+import igniteTimer from '../assets/images/projects/ignite-timer.webp'
 
 const projects = [
   {
-    name: 'Gasola',
-    description: 'Lorem ipsum dolor sit, amet consecte',
-    image: igniteCoffee,
-    link: 'https://www.gasola.net',
-  },
-  {
-    name: 'ignite coofe',
+    name: 'Cooffe delivery',
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam consequuntur quaerat nulla rerum? Reprehenderit, non. Nisi eligendi, hic, expedita reiciendis maiores deleniti consequatur vitae dolorem sunt ipsa enim. Id, labore.',
-    image: igniteCoffee,
+      'O Coffee Delivery é um projeto de design, é uma proposta atraente e moderna para um site de entrega de café. Com um layout intuitivo e apelativo, busca proporcionar uma experiência envolvente aos usuários, permitindo que eles explorem e peçam cafés artesanais de forma rápida e prática.',
+    image: igniteCoffeeDelivery,
     link: 'https://ofhelipe.github.io/ignite-coffee-delivery/',
   },
   {
-    name: 'ignite timer',
+    name: 'Timer',
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam consequuntur quaerat nulla rerum? Reprehenderit, non. Nisi eligendi, hic, expedita reiciendis maiores deleniti consequatur vitae dolorem sunt ipsa enim. Id, labore.',
-    image: igniteCoffee,
+      'Um cronômetro intuitivo que permite aos usuários definirem períodos de tempo para suas tarefas. Além disso, o aplicativo mantém um registro do histórico de tarefas realizadas, oferecendo uma poderosa ferramenta para o aprimoramento da organização pessoal e a conquista de metas com maior eficiência e foco',
+    image: igniteTimer,
     link: 'https://ofhelipe.github.io/ignite-timer/',
   },
   {
     name: 'Youtube clone design',
-    description: 'Lorem ipsum dolor sit, amet consecte',
-    image: igniteCoffee,
+    description:
+      'O YouTube Clone é uma recriação visualmente impressionante da famosa plataforma de compartilhamento de vídeos. Com uma interface cativante e moderna, os vídeos reproduzem automaticamente ao passar o mouse sobre eles, proporcionando uma experiência interativa e envolvente.',
+    image: youtubeClone,
     link: 'https://youtube-clone-ofhelipe.vercel.app',
   },
 ]

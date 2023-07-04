@@ -20,6 +20,7 @@ const en: ILanguage = {
   contactMe3: 'me',
   contactMeSubText:
     "I'd be delighted to share further details about my experience and skills. I'm eager to hear your ideas and collaborate in crafting an extraordinary and remarkable reality together.",
+  seeProject: 'See project',
 }
 
 export default en as any as Record<string, string>

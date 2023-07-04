@@ -15,6 +15,7 @@ interface ILanguage {
   contactMe2: string
   contactMe3: string
   contactMeSubText: string
+  seeProject: string
 }
 
 export default ILanguage

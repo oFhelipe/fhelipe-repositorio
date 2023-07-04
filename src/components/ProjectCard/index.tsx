@@ -1,3 +1,4 @@
+import { FormattedMessage } from 'react-intl'
 import * as S from './styles'
 
 type ProjectCardProps = {
@@ -21,7 +22,10 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <h2 className="gradient-text">{name}</h2>
         <p>{description}</p>
       </S.InfoContainer>
-      <h3 className="gradient-text">Ver projeto</h3>
+      <h3 className="gradient-text">
+        {' '}
+        <FormattedMessage id="seeProject" />
+      </h3>
     </S.Container>
   )
 }

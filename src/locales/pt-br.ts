@@ -20,6 +20,7 @@ const ptBR: ILanguage = {
   contactMe3: 'comigo',
   contactMeSubText:
     'Ficarei feliz em fornecer mais detalhes sobre minha experiência e habilidades, e estou ansioso para ouvir suas ideias e criar juntos uma realidade incrível e surpreendente.',
+  seeProject: 'Ver projeto',
 }
 
 export default ptBR as any as Record<string, string>

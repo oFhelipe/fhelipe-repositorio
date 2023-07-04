@@ -1,30 +1,27 @@
-import igniteCoffee from '../assets/images/projects/ignite-coffee.png'
+import igniteCoffeeDelivery from '../assets/images/projects/ignite-coffee-delivery.webp'
+import youtubeClone from '../assets/images/projects/youtube-clone.webp'
+import igniteTimer from '../assets/images/projects/ignite-timer.webp'
 
 const projects = [
   {
-    name: 'Gasola',
-    description: 'Lorem ipsum dolor sit, amet consecte',
-    image: igniteCoffee,
-    link: 'https://www.gasola.net',
-  },
-  {
-    name: 'ignite coofe',
+    name: 'Cooffe delivery',
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam consequuntur quaerat nulla rerum? Reprehenderit, non. Nisi eligendi, hic, expedita reiciendis maiores deleniti consequatur vitae dolorem sunt ipsa enim. Id, labore.',
-    image: igniteCoffee,
+      'Coffee Delivery is a design project, an attractive and modern proposal for a coffee delivery website. With an intuitive and appealing layout, it aims to provide an engaging experience to users, allowing them to explore and order artisanal coffees quickly and conveniently.',
+    image: igniteCoffeeDelivery,
     link: 'https://ofhelipe.github.io/ignite-coffee-delivery/',
   },
   {
-    name: 'ignite timer',
+    name: 'Timer',
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam consequuntur quaerat nulla rerum? Reprehenderit, non. Nisi eligendi, hic, expedita reiciendis maiores deleniti consequatur vitae dolorem sunt ipsa enim. Id, labore.',
-    image: igniteCoffee,
+      'An intuitive timer that allows users to set time periods for their tasks. Additionally, the application keeps a record of completed task history, providing a powerful tool for improving personal organization and achieving goals with greater efficiency and focus.',
+    image: igniteTimer,
     link: 'https://ofhelipe.github.io/ignite-timer/',
   },
   {
     name: 'Youtube clone design',
-    description: 'Lorem ipsum dolor sit, amet consecte',
-    image: igniteCoffee,
+    description:
+      'The YouTube Clone is a visually stunning recreation of the famous video-sharing platform. With a captivating and modern interface, videos play automatically when hovering the mouse over them, providing an interactive and engaging experience.',
+    image: youtubeClone,
     link: 'https://youtube-clone-ofhelipe.vercel.app',
   },
 ]
