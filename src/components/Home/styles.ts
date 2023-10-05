@@ -12,6 +12,7 @@ export const HomeContainer = styled.div`
   justify-content: space-around;
 
   svg {
+    height: 48px;
     animation: float 1.5s ease-in-out infinite;
   }
 
@@ -30,6 +31,10 @@ export const HomeContainer = styled.div`
 
 export const InfoContainer = styled.div`
   margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   h3 {
     font-size: 1.125rem;
@@ -64,15 +69,16 @@ export const InfoContainer = styled.div`
 
   @media (min-width: 1023px) {
     h3 {
-      font-size: 3rem;
+      font-size: 2.75rem;
     }
 
     h1 {
-      font-size: 7rem;
+      font-size: 6.5rem;
     }
 
     p {
-      font-size: 1.75rem;
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
     }
   }
 `

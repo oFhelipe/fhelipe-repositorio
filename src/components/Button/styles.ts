@@ -6,10 +6,8 @@ export const ButtonContainer = styled.button`
   font-size: 1.25rem;
   padding: 1rem 2rem;
   border: none;
-  div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 `

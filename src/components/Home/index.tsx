@@ -16,11 +16,11 @@ const Home = () => {
         <p>
           <FormattedMessage id="whatIDo" />
         </p>
-        <a href="#contact-container">
-          <Button>
+        <Button>
+          <a href="#contact-container">
             <FormattedMessage id="contactMeCTA" />
-          </Button>
-        </a>
+          </a>
+        </Button>
       </S.InfoContainer>
       <CaretDown size={48} />
     </S.HomeContainer>

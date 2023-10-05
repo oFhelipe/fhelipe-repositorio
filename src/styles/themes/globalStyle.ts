@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
 
   html {
     scroll-behavior: smooth;
-    cursor: none;
+    // cursor: none;
   }
 
   * {
@@ -30,6 +30,10 @@ export const GlobalStyle = createGlobalStyle`
 
   ul {
     list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   .gradient {
