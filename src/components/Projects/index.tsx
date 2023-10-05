@@ -5,7 +5,7 @@ import { CaretLeft, CaretRight } from '@phosphor-icons/react'
 import { FormattedMessage } from 'react-intl'
 import projectsPtBR from '../../data/projects-pt-br'
 import projectsEn from '../../data/projects-en'
-import { useConfig } from '../../context/ConfigProvider'
+import { useConfig } from '../../providers/ConfigProvider'
 
 const Projects = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null)

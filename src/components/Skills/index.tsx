@@ -4,7 +4,7 @@ import SkillCard from '../SkillCard'
 import imagesBySkill from '../SkillCard/imagesBySkill'
 import * as S from './styles'
 import { useState, useEffect } from 'react'
-import { useConfig } from '../../context/ConfigProvider'
+import { useConfig } from '../../providers/ConfigProvider'
 import { FormattedMessage } from 'react-intl'
 
 const Skills = () => {

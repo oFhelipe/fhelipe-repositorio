@@ -1,7 +1,7 @@
 import MouseCursor from './components/MouseCursor'
-import ConfigProvider from './context/ConfigProvider'
+import ConfigProvider from './providers/ConfigProvider'
 import HomePage from './Pages/HomePage'
-import ProviderInit from './ProviderInit'
+import ProviderInit from './providers/ProviderInit'
 
 function App() {
   return (

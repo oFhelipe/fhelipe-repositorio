@@ -1,8 +1,7 @@
-import { ThemeProvider } from 'styled-components'
-import darkTheme from './styles/themes/default'
+import ThemeProvider from './ThemeProvider'
 import { IntlProvider } from 'react-intl'
-import { getCurrenLocaleLanguage } from './locales'
-import { useConfig } from './context/ConfigProvider'
+import { getCurrenLocaleLanguage } from '../locales'
+import { useConfig } from './ConfigProvider'
 import { ReactNode } from 'react'
 
 type ProviderInitProps = {
@@ -12,7 +11,7 @@ type ProviderInitProps = {
 const ProviderInit = ({ children }: ProviderInitProps) => {
   const { language } = useConfig()
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider>
       <IntlProvider
         messages={getCurrenLocaleLanguage(language)}
         locale={language}

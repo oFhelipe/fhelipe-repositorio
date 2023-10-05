@@ -3,7 +3,7 @@ import * as S from './styles'
 import brazillianFlag from '../../assets/images/brazillian-flag.webp'
 import usaFlag from '../../assets/images/usa-flag.webp'
 import { X } from '@phosphor-icons/react'
-import { useConfig } from '../../context/ConfigProvider'
+import { useConfig } from '../../providers/ConfigProvider'
 import { FormattedMessage } from 'react-intl'
 
 const LanguagePopover = () => {

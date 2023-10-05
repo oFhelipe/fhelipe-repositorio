@@ -1,4 +1,4 @@
-import { useConfig } from '../../context/ConfigProvider'
+import { useConfig } from '../../providers/ConfigProvider'
 import * as S from './styles'
 
 type SkillCardProps = {
