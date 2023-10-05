@@ -4,7 +4,10 @@ import { FormattedMessage } from 'react-intl'
 
 const AboutMe = () => {
   return (
-    <S.AboutMeContainer id="about-me-container">
+    <S.AboutMeContainer
+      id="about-me-container"
+      data-testid="about-me-container"
+    >
       <S.ImageBackground className="gradient">
         <img src={fhelipe} alt="Fhelipe Rodrigues" />
       </S.ImageBackground>
