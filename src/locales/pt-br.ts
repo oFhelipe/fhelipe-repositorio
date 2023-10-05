@@ -6,8 +6,9 @@ const ptBR: ILanguage = {
   projects: 'Projetos',
   skills: 'Habilidades',
   contact: 'Contato',
-  iam: 'Sou o {name}',
-  fullstack: 'Desenvolvedor {br} Fullstack',
+  iam: 'Sou Fhelipe Rodrigues',
+  fullstack: 'Desenvolvedor \u00a0 Fullstack',
+  function: 'Desenvolvedor Fullstack',
   whatIDo:
     'Uso  linhas de código como pincel digital, para transformar ideias em soluções impactantes e de alta qualidade',
   portuguese: 'Português',
@@ -23,4 +24,4 @@ const ptBR: ILanguage = {
   seeProject: 'Ver projeto',
 }
 
-export default ptBR as any as Record<string, string>
+export default ptBR

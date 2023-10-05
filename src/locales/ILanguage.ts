@@ -6,6 +6,7 @@ interface ILanguage {
   contact: string
   iam: string
   fullstack: string
+  function: string
   whatIDo: string
   portuguese: string
   english: string
@@ -16,6 +17,7 @@ interface ILanguage {
   contactMe3: string
   contactMeSubText: string
   seeProject: string
+  [key: string]: string
 }
 
 export default ILanguage

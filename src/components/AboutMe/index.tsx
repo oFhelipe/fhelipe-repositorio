@@ -9,14 +9,14 @@ const AboutMe = () => {
         <img src={fhelipe} alt="Fhelipe Rodrigues" />
       </S.ImageBackground>
       <S.InfoBackground>
-        <h3 className="gradient-text">
+        <h3 className="gradient-text" data-testid="aboutMe">
           <FormattedMessage id="aboutMe" />
         </h3>
         <h2>Fhelipe Rodrigues</h2>
-        <h3>
-          <FormattedMessage id="fullstack" values={{ br: '' }} />
+        <h3 data-testid="function">
+          <FormattedMessage id="function" />
         </h3>
-        <p>
+        <p data-testid="aboutMeText">
           <FormattedMessage id="aboutMeText" />
         </p>
       </S.InfoBackground>

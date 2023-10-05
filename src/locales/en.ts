@@ -6,8 +6,9 @@ const en: ILanguage = {
   projects: 'Projects',
   skills: 'Skills',
   contact: 'Contact',
-  iam: 'I am {name}',
-  fullstack: 'Fullstack {br} Developer',
+  iam: 'I am Fhelipe Rodrigues',
+  fullstack: 'Fullstack \u00a0 Developer',
+  function: 'Fullstack Developer',
   whatIDo:
     'I use lines of code as a digital brush to transform ideas into impactful and high-quality solutions.',
   portuguese: 'Portuguese',
@@ -23,4 +24,4 @@ const en: ILanguage = {
   seeProject: 'See project',
 }
 
-export default en as any as Record<string, string>
+export default en

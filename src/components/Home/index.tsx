@@ -8,10 +8,10 @@ const Home = () => {
     <S.HomeContainer id="home-container">
       <S.InfoContainer>
         <h3>
-          <FormattedMessage id="iam" values={{ name: 'Fhelipe Rodrigues' }} />
+          <FormattedMessage id="iam" />
         </h3>
         <h1 className="gradient-text">
-          <FormattedMessage id="fullstack" values={{ br: <br /> }} />
+          <FormattedMessage id="fullstack" />
         </h1>
         <p>
           <FormattedMessage id="whatIDo" />

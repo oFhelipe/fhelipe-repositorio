@@ -1,7 +1,7 @@
 import ptBR from './pt-br'
 import en from './en'
 
-function getCurrenLocaleLanguage(language: string): Record<string, string> {
+function getCurrenLocaleLanguage(language: string) {
   if (language === 'en') {
     return en
   }
