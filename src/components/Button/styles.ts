@@ -10,4 +10,8 @@ export const ButtonContainer = styled.button`
   align-items: center;
   justify-content: center;
   gap: 1rem;
+
+  a {
+    color: ${(props) => props.theme.colors.textStrong};
+  }
 `

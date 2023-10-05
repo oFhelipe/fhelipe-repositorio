@@ -6,36 +6,42 @@ import { FormattedMessage } from 'react-intl'
 
 const Contact = () => {
   return (
-    <S.ContactContainer id="contact-container">
-      <h1>
+    <S.ContactContainer data-testid="contact-container" id="contact-container">
+      <h1 data-testid="contactMe1">
         <FormattedMessage id="contactMe1" />
       </h1>
-      <h1>
-        <strong className="gradient-text">
+      <h1 data-testid="contactMe3">
+        <strong className="gradient-text" data-testid="contactMe2">
           <FormattedMessage id="contactMe2" />
         </strong>{' '}
         <FormattedMessage id="contactMe3" />
       </h1>
-      <p>
+      <p data-testid="contactMeSubText">
         <FormattedMessage id="contactMeSubText" />
       </p>
       <S.ButtonsContainer>
-        <a href="https://github.com/oFhelipe" target="_blank" rel="noreferrer">
-          <Button>
+        <Button data-testid="github-button">
+          <a
+            data-testid="github-link"
+            href="https://github.com/oFhelipe"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={github} alt="github" />
-            <p>Github</p>
-          </Button>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/fhelipe-rodrigues/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Button>
+            Github
+          </a>
+        </Button>
+        <Button data-testid="linkedin-button">
+          <a
+            data-testid="linkedin-link"
+            href="https://www.linkedin.com/in/fhelipe-rodrigues/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={linkedIn} alt="linkedIn" />
-            <p>LinkedIn</p>
-          </Button>
-        </a>
+            LinkedIn
+          </a>
+        </Button>
       </S.ButtonsContainer>
     </S.ContactContainer>
   )

@@ -15,10 +15,6 @@ export const ContactContainer = styled.section`
     text-align: center;
   }
 
-  button {
-    min-width: 250px;
-  }
-
   h1 {
     font-size: 2rem;
     white-space: nowrap;
@@ -55,6 +51,17 @@ export const ButtonsContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  button {
+    min-width: 250px;
+
+    a {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 
   @media (min-width: 767px) {
     flex-direction: row;
