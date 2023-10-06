@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const HomeContainer = styled.div`
   margin: auto;
   padding: 4rem 2rem 0 2rem;
-  height: 100vh;
   max-width: 1440px;
   display: flex;
   flex-direction: column;
@@ -31,6 +30,7 @@ export const HomeContainer = styled.div`
 
 export const InfoContainer = styled.div`
   margin-top: 4rem;
+  margin-bottom: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
