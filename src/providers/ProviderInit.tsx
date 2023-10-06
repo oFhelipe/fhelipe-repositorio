@@ -1,7 +1,5 @@
 import ThemeProvider from './ThemeProvider'
-import { IntlProvider } from 'react-intl'
-import { getCurrenLocaleLanguage } from '../locales'
-import { useConfig } from './ConfigProvider'
+import IntlProvider from './IntlProvider'
 import { ReactNode } from 'react'
 
 type ProviderInitProps = {
@@ -9,15 +7,9 @@ type ProviderInitProps = {
 }
 
 const ProviderInit = ({ children }: ProviderInitProps) => {
-  const { language } = useConfig()
   return (
     <ThemeProvider>
-      <IntlProvider
-        messages={getCurrenLocaleLanguage(language)}
-        locale={language}
-      >
-        {children}
-      </IntlProvider>
+      <IntlProvider>{children}</IntlProvider>
     </ThemeProvider>
   )
 }

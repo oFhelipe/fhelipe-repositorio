@@ -10,7 +10,7 @@ type IntlProviderProps = {
 
 const IntlProvider = ({ children, locale = '' }: IntlProviderProps) => {
   const { language } = useConfig()
-  const selectedLanguage = locale ?? language
+  const selectedLanguage = locale || language
   return (
     <Provider
       messages={getCurrenLocaleLanguage(selectedLanguage)}
