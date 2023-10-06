@@ -2,13 +2,13 @@ import styled from 'styled-components'
 import imagesBySkill from './imagesBySkill'
 
 type SkillCardContainerProps = {
-  isSelected: boolean
+  $isSelected: boolean
 }
 
 type SkillImageProps = {
   name: string
-  themeName: string
-  isSelected: boolean
+  $themeName: string
+  $isSelected: boolean
 }
 
 export const SkillCardContainer = styled.div<SkillCardContainerProps>`
@@ -17,7 +17,7 @@ export const SkillCardContainer = styled.div<SkillCardContainerProps>`
   border-radius: 8px;
   position: relative;
   background-color: ${(props) =>
-    props.isSelected
+    props.$isSelected
       ? props.theme.colors.loadingColor + '0d'
       : props.theme.colors.cardBackground};
 
@@ -27,7 +27,7 @@ export const SkillCardContainer = styled.div<SkillCardContainerProps>`
       )
       padding-box,
     ${(props) =>
-        props.isSelected
+        props.$isSelected
           ? props.theme.colors.gradient
           : props.theme.colors.cardBorder}
       border-box;
@@ -40,7 +40,7 @@ export const SkillCardContainer = styled.div<SkillCardContainerProps>`
         )
         padding-box,
       ${(props) =>
-          props.isSelected
+          props.$isSelected
             ? props.theme.colors.gradient
             : props.theme.colors.cardBorderHover}
         border-box;
@@ -64,11 +64,11 @@ export const SkillImage = styled.div<SkillImageProps>`
   background-size: contain;
   background-image: ${(props) => {
     const image = imagesBySkill[props.name]
-    if (props.isSelected) {
+    if (props.$isSelected) {
       return `url(${image.gradient})`
     }
 
-    if (props.themeName === 'dark') {
+    if (props.$themeName === 'dark') {
       return `url(${image.dark})`
     }
 
@@ -78,11 +78,11 @@ export const SkillImage = styled.div<SkillImageProps>`
   &:hover {
     background-image: ${(props) => {
       const image = imagesBySkill[props.name]
-      if (props.isSelected) {
+      if (props.$isSelected) {
         return `url(${image.gradient})`
       }
 
-      if (props.themeName === 'dark') {
+      if (props.$themeName === 'dark') {
         return `url(${image['dark-hover']})`
       }
 

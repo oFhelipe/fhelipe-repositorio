@@ -11,7 +11,7 @@ const Header = () => {
     setIsMenuVisible((oldStateValue) => !oldStateValue)
   }
   return (
-    <S.HeaderContainer id="home">
+    <S.HeaderContainer data-testid="header-container" id="home">
       <S.HeaderContentContainer>
         <a href="#home-container">
           <h3>{'<FR />'}</h3>
@@ -24,29 +24,29 @@ const Header = () => {
           >
             <List size={32} />
           </button>
-          <S.MenuContainer isMenuVisible={isMenuVisible}>
+          <S.MenuContainer $isMenuVisible={isMenuVisible}>
             <ul>
-              <li onClick={handleChangeMenuVisibility}>
+              <li data-testid="home" onClick={handleChangeMenuVisibility}>
                 <a href="#home-container">
                   <FormattedMessage id="home" />
                 </a>
               </li>
-              <li onClick={handleChangeMenuVisibility}>
+              <li data-testid="aboutMe" onClick={handleChangeMenuVisibility}>
                 <a href="#about-me-container">
                   <FormattedMessage id="aboutMe" />
                 </a>
               </li>
-              <li onClick={handleChangeMenuVisibility}>
+              <li data-testid="skills" onClick={handleChangeMenuVisibility}>
                 <a href="#skills-container">
                   <FormattedMessage id="skills" />
                 </a>
               </li>
-              <li onClick={handleChangeMenuVisibility}>
+              <li data-testid="projects" onClick={handleChangeMenuVisibility}>
                 <a href="#projects-container">
                   <FormattedMessage id="projects" />
                 </a>
               </li>
-              <li onClick={handleChangeMenuVisibility}>
+              <li data-testid="contact" onClick={handleChangeMenuVisibility}>
                 <a href="#contact-container">
                   <FormattedMessage id="contact" />
                 </a>

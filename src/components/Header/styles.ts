@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 type MenuContainerProps = {
-  isMenuVisible: boolean
+  $isMenuVisible: boolean
 }
 
 export const HeaderContainer = styled.div`
@@ -59,7 +59,7 @@ export const MenuContainer = styled.div<MenuContainerProps>`
     transition: width 0.2s linear;
     top: 0;
     right: 0;
-    width: ${(props) => (props.isMenuVisible ? '100%' : '0px')};
+    width: ${(props) => (props.$isMenuVisible ? '100%' : '0px')};
     ul {
       padding: 3rem 1rem 2rem 2rem;
     }
