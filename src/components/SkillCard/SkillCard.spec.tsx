@@ -21,7 +21,7 @@ describe('Componente: <SkillCard />', () => {
       <TestProvider>
         <SkillCard isSelected={false} name="Node" onClick={mockOnClick} />
       </TestProvider>,
-    ).debug()
+    )
     const skillCardImage = screen.getByTestId('skill_image_Node')
 
     await userEvent.click(skillCardImage)
