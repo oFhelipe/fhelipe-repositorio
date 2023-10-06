@@ -1,15 +1,15 @@
 import { render, screen } from '@testing-library/react'
 import Contact from '.'
-import IntlProvider from '../../providers/IntlProvider'
 import ptBR from '../../locales/pt-br'
 import en from '../../locales/en'
+import TestProvider from '../../test/TestProvider'
 
 describe('Componente: <Contact />', () => {
   test('Deve rendenizar em portugues', () => {
     render(
-      <IntlProvider locale="pt-BR">
+      <TestProvider initialLanguage="pt-BR">
         <Contact />
-      </IntlProvider>,
+      </TestProvider>,
     )
 
     const contactContainer = screen.getByTestId('contact-container')
@@ -40,9 +40,9 @@ describe('Componente: <Contact />', () => {
 
   test('Deve rendenizar em ingles', () => {
     render(
-      <IntlProvider locale="en">
+      <TestProvider initialLanguage="en">
         <Contact />
-      </IntlProvider>,
+      </TestProvider>,
     )
 
     const contactContainer = screen.getByTestId('contact-container')
@@ -73,9 +73,9 @@ describe('Componente: <Contact />', () => {
 
   test('Deve ter um botão com um link para o LinkedIn', () => {
     render(
-      <IntlProvider locale="pt-BR">
+      <TestProvider initialLanguage="pt-BR">
         <Contact />
-      </IntlProvider>,
+      </TestProvider>,
     )
     const button = screen.getByTestId('linkedin-button')
     const link = screen.getByTestId('linkedin-link')
@@ -88,9 +88,9 @@ describe('Componente: <Contact />', () => {
 
   test('Deve ter um botão com um link para o GitHub', () => {
     render(
-      <IntlProvider locale="pt-BR">
+      <TestProvider initialLanguage="pt-BR">
         <Contact />
-      </IntlProvider>,
+      </TestProvider>,
     )
     const button = screen.getByTestId('github-button')
     const link = screen.getByTestId('github-link')

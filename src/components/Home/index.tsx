@@ -5,18 +5,18 @@ import { FormattedMessage } from 'react-intl'
 
 const Home = () => {
   return (
-    <S.HomeContainer id="home-container">
+    <S.HomeContainer data-testid="home-container" id="home-container">
       <S.InfoContainer>
-        <h3>
+        <h3 data-testid="iam">
           <FormattedMessage id="iam" />
         </h3>
-        <h1 className="gradient-text">
+        <h1 data-testid="fullstack" className="gradient-text">
           <FormattedMessage id="fullstack" />
         </h1>
-        <p>
+        <p data-testid="whatIDo">
           <FormattedMessage id="whatIDo" />
         </p>
-        <Button>
+        <Button data-testid="contactMeCTA">
           <a href="#contact-container">
             <FormattedMessage id="contactMeCTA" />
           </a>

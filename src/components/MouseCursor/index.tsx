@@ -22,7 +22,12 @@ const MouseCursor = () => {
     }
   }, [])
 
-  return <S.MouseContainer ref={mouseCursorRef}></S.MouseContainer>
+  return (
+    <S.MouseContainer
+      data-testid="custom-mouse"
+      ref={mouseCursorRef}
+    ></S.MouseContainer>
+  )
 }
 
 export default MouseCursor

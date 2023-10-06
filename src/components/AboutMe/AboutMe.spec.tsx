@@ -1,15 +1,15 @@
 import { render, screen } from '@testing-library/react'
 import AboutMe from '.'
-import IntlProvider from '../../providers/IntlProvider'
 import ptBR from '../../locales/pt-br'
 import en from '../../locales/en'
+import TestProvider from '../../test/TestProvider'
 
 describe('Componente: <AboutMe />', () => {
   test('Deve rendenizar em portugues', () => {
     render(
-      <IntlProvider locale="pt-BR">
+      <TestProvider>
         <AboutMe />
-      </IntlProvider>,
+      </TestProvider>,
     )
 
     const aboutMeContainer = screen.getByTestId('about-me-container')
@@ -33,9 +33,9 @@ describe('Componente: <AboutMe />', () => {
 
   test('Deve rendenizar em ingles', () => {
     render(
-      <IntlProvider locale="en">
+      <TestProvider initialLanguage="en">
         <AboutMe />
-      </IntlProvider>,
+      </TestProvider>,
     )
 
     const aboutMeContainer = screen.getByTestId('about-me-container')

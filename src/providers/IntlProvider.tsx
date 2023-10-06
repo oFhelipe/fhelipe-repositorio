@@ -1,21 +1,24 @@
 import { IntlProvider as Provider } from 'react-intl'
 import { getCurrenLocaleLanguage } from '../locales'
 import { useConfig } from './ConfigProvider'
-import { ReactNode } from 'react'
+import { ReactNode, useEffect } from 'react'
 
 type IntlProviderProps = {
   children: ReactNode
-  locale?: string
+  locale?: 'en' | 'pt-BR'
 }
 
-const IntlProvider = ({ children, locale = '' }: IntlProviderProps) => {
-  const { language } = useConfig()
-  const selectedLanguage = locale || language
+const IntlProvider = ({ children, locale }: IntlProviderProps) => {
+  const { language, changeLanguage } = useConfig()
+
+  useEffect(() => {
+    if (locale) {
+      changeLanguage(locale)
+    }
+  }, [locale, changeLanguage])
+
   return (
-    <Provider
-      messages={getCurrenLocaleLanguage(selectedLanguage)}
-      locale={selectedLanguage}
-    >
+    <Provider messages={getCurrenLocaleLanguage(language)} locale={language}>
       {children}
     </Provider>
   )

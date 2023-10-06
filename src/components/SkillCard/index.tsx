@@ -10,8 +10,12 @@ type SkillCardProps = {
 const SkillCard = ({ name, isSelected = false, onClick }: SkillCardProps) => {
   const { theme } = useConfig()
   return (
-    <S.SkillCardContainer $isSelected={isSelected}>
+    <S.SkillCardContainer
+      data-testid={`skill_${name}`}
+      $isSelected={isSelected}
+    >
       <S.SkillImage
+        data-testid={`skill_image_${name}`}
         $isSelected={isSelected}
         name={name}
         $themeName={theme}

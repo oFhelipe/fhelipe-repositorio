@@ -18,22 +18,25 @@ const LanguagePopover = () => {
       </Popover.Trigger>
       <Popover.Portal>
         <Popover.Content align="end" asChild>
-          <S.PopoverContainer>
+          <S.PopoverContainer data-testid="popover-container">
             <Popover.Close asChild>
               <S.CloseButton title="close popover">
                 <X size={24} />
               </S.CloseButton>
             </Popover.Close>
             <S.LanguageSelectButton
-              title="USA Flag"
+              data-testid="usaflag"
               onClick={() => changeLanguage('en')}
             >
-              <img src={usaFlag} alt="usa" />
+              <img src={usaFlag} alt="usa" title="USA Flag" />
               <span>
                 <FormattedMessage id="english" />
               </span>
             </S.LanguageSelectButton>
-            <S.LanguageSelectButton onClick={() => changeLanguage('pt-BR')}>
+            <S.LanguageSelectButton
+              data-testid="brazillianflag"
+              onClick={() => changeLanguage('pt-BR')}
+            >
               <img src={brazillianFlag} title="Brazillian Flag" alt="brazil" />
               <span>
                 <FormattedMessage id="portuguese" />

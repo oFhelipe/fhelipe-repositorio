@@ -16,7 +16,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
     window.open(link, '_blank')
   }
   return (
-    <S.Container onClick={handleClickOnCard}>
+    <S.Container data-testid="project-card" onClick={handleClickOnCard}>
       <img src={image} alt="" />
       <S.InfoContainer>
         <h2 className="gradient-text">{name}</h2>
